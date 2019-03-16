@@ -74,6 +74,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
+ ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/Slider.hpp \
  gui/include/gui/startup_screen/StartupView.hpp \
  generated/gui_generated/include/gui_generated/startup_screen/StartupViewBase.hpp \
  gui/include/gui/startup_screen/StartupPresenter.hpp \
@@ -229,6 +230,8 @@ gui/include/gui/model/ModelListener.hpp:
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
+
+../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/Slider.hpp:
 
 gui/include/gui/startup_screen/StartupView.hpp:
 

@@ -67,6 +67,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/bear_screen/BearViewBase.o: \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
+ ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/Slider.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/Color.hpp \
  generated/images/include/BitmapDatabase.hpp
 
@@ -203,6 +204,8 @@ gui/include/gui/model/ModelListener.hpp:
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
+
+../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/Slider.hpp:
 
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/Color.hpp:
 

@@ -6,7 +6,7 @@ ST-LINK SN: 066CFF575051717867082532
 ST-LINK Firmware version: V2J33M25
 Connected via SWD.
 SWD Frequency = 4000K.
-Target voltage = 2.8 V
+Target voltage = 2.9 V
 Connection mode: Normal
 Reset mode: Hardware reset
 Device ID: 0x419 
@@ -18,8 +18,8 @@ Flash Programming:
   File : TouchGFX/build/bin/intflash.hex
   Address : 0x08000000
 Memory programming...
-±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0% 0%€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 95%€€€ 100%
-Memory programmed in 5s and 375ms.
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0% 0%€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 80%€€€€€€€€€€ 100%
+Memory programmed in 6s and 78ms.
 Programming Complete.
 
 MCU Reset.

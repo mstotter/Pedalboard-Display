@@ -26,7 +26,7 @@
             "RelativeFilename": "Be_Nice_to_Fat_People_small.png",
             "Alpha": 255,
             "Name": "image",
-            "X": 17,
+            "X": 33,
             "Y": 0,
             "Width": 207,
             "Height": 320,
@@ -47,7 +47,7 @@
                 "Type": "BoxWithBorderButtonStyle",
                 "X": 0,
                 "Y": 0,
-                "Width": 240,
+                "Width": 207,
                 "Height": 320,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
@@ -74,11 +74,36 @@
               }
             ],
             "Name": "flexButton1",
-            "X": 0,
+            "X": 33,
             "Y": 0,
-            "Width": 240,
+            "Width": 207,
             "Height": 320,
             "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "IsHorizontalSlider": false,
+            "BackgroundUnselected": "__designer\\blue_slider_vertical_small_slider3_vertical_round_edge_back.png",
+            "BackgroundSelected": "__designer\\blue_slider_vertical_small_slider3_vertical_round_edge_fill.png",
+            "Indicator": "__designer\\blue_slider_vertical_small_indicators_slider3_vertical_round_edge_nob.png",
+            "BackgroundX": 7,
+            "BackgroundY": 3,
+            "IndicatorPos": 0,
+            "IndicatorMax": 125,
+            "IndicatorMin": 0,
+            "ValueMax": 255,
+            "ValueMin": 0,
+            "InitValue": 0,
+            "Name": "alphavalue",
+            "X": 0,
+            "Y": 71,
+            "Width": 34,
+            "Height": 179,
+            "Type": "Slider",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -110,6 +135,18 @@
             },
             "Action": {
               "Type": "ActionNone"
+            }
+          },
+          {
+            "InteractionName": "slide",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "alphavalue",
+              "Type": "TriggerSliderValueChanged"
+            },
+            "Action": {
+              "FunctionName": "changealpha",
+              "Type": "ActionCustom"
             }
           }
         ],

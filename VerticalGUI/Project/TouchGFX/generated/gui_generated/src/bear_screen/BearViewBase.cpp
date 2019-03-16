@@ -6,24 +6,33 @@
 #include "BitmapDatabase.hpp"
 
 BearViewBase::BearViewBase() :
-    flexButtonCallback(this, &BearViewBase::flexButtonCallbackHandler)
+    flexButtonCallback(this, &BearViewBase::flexButtonCallbackHandler),
+    sliderValueChangedCallback(this, &BearViewBase::sliderValueChangedCallbackHandler)
 {
     box1.setPosition(0, 0, 240, 320);
     box1.setColor(touchgfx::Color::getColorFrom24BitRGB(213, 214, 218));
 
-    image.setXY(17, 0);
+    image.setXY(33, 0);
     image.setBitmap(Bitmap(BITMAP_BE_NICE_TO_FAT_PEOPLE_SMALL_ID));
 
-    flexButton1.setBoxWithBorderPosition(0, 0, 240, 320);
+    flexButton1.setBoxWithBorderPosition(0, 0, 207, 320);
     flexButton1.setBorderSize(5);
     flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
-    flexButton1.setPosition(0, 0, 240, 320);
+    flexButton1.setPosition(33, 0, 207, 320);
     flexButton1.setAlpha(0);
     flexButton1.setAction(flexButtonCallback);
+
+    alphavalue.setXY(0, 71);
+    alphavalue.setBitmaps(Bitmap(BITMAP_BLUE_SLIDER_VERTICAL_SMALL_SLIDER3_VERTICAL_ROUND_EDGE_BACK_ID), Bitmap(BITMAP_BLUE_SLIDER_VERTICAL_SMALL_SLIDER3_VERTICAL_ROUND_EDGE_FILL_ID), Bitmap(BITMAP_BLUE_SLIDER_VERTICAL_SMALL_INDICATORS_SLIDER3_VERTICAL_ROUND_EDGE_NOB_ID));
+    alphavalue.setupVerticalSlider(7, 3, 0, 0, 125);
+    alphavalue.setValueRange(0, 255);
+    alphavalue.setValue(0);
+    alphavalue.setNewValueCallback(sliderValueChangedCallback);
 
     add(box1);
     add(image);
     add(flexButton1);
+    add(alphavalue);
 }
 
 void BearViewBase::setupScreen()
@@ -39,5 +48,16 @@ void BearViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonConta
         //When flexButton1 clicked change screen to Startup
         //Go to Startup with screen transition towards East
         application().gotoStartupScreenCoverTransitionEast();
+    }
+}
+
+void BearViewBase::sliderValueChangedCallbackHandler(const touchgfx::Slider& src, int value)
+{
+    if (&src == &alphavalue)
+    {
+        //slide
+        //When alphavalue value changed call virtual function
+        //Call changealpha
+        changealpha(value);
     }
 }

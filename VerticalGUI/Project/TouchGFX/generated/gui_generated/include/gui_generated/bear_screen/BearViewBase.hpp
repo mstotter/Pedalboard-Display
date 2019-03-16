@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/containers/Slider.hpp>
 
 class BearViewBase : public touchgfx::View<BearPresenter>
 {
@@ -18,6 +19,14 @@ public:
     virtual ~BearViewBase() {}
 
     virtual void setupScreen();
+
+    /*
+     * Custom Action Handlers
+     */
+    virtual void changealpha(int value)
+    {
+        // Override and implement this function in BearView
+    }
 
 protected:
     FrontendApplication& application() {
@@ -30,6 +39,7 @@ protected:
     touchgfx::Box box1;
     touchgfx::Image image;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton1;
+    touchgfx::Slider alphavalue;
 
 private:
 
@@ -37,11 +47,13 @@ private:
      * Callback Handler Declarations
      */
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+    void sliderValueChangedCallbackHandler(const touchgfx::Slider& src, int value);
 
     /*
      * Callback Declarations
      */
     touchgfx::Callback<BearViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+    touchgfx::Callback<BearViewBase, const touchgfx::Slider&, int> sliderValueChangedCallback;
 
 };
 

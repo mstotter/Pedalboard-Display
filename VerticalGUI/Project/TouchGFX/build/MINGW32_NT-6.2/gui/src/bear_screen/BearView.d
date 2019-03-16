@@ -67,7 +67,8 @@ build/MINGW32_NT-6.2/gui/src/bear_screen/BearView.o: \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TiledImage.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
  ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp
+ ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
+ ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/Slider.hpp
 
 gui/include/gui/bear_screen/BearView.hpp:
 
@@ -204,3 +205,5 @@ gui/include/gui/model/ModelListener.hpp:
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
+
+../../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/Slider.hpp:

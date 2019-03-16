@@ -11,6 +11,7 @@ public:
     virtual ~BearView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+	virtual void changealpha(int value);
 protected:
 };
 
