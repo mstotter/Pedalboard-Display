@@ -1,1 +1,6 @@
 Converting images
+Compiling gui/src/bear_screen/BearPresenter.cpp
+Compiling gui/src/bear_screen/BearView.cpp
+Compiling generated/gui_generated/src/common/FrontendApplicationBase.cpp
+Compiling simulator/main.cpp
+Linking build/bin/simulator.exe
