@@ -390,7 +390,7 @@
    </obj>
    <obj type="drj/audio/out_stereo_vol" uuid="awca1a567f535acc21055669829101d3ee7f0189" name="out_stereo_vol_1" x="2268" y="1106">
       <params>
-         <frac32.u.map name="volume" value="64.0"/>
+         <frac32.u.map name="volume" value="25.5"/>
       </params>
       <attribs/>
    </obj>
@@ -1165,8 +1165,8 @@
       </net>
       <net>
          <source obj="in_1" outlet="wave"/>
-         <dest obj="chorus_1" inlet="in"/>
          <dest obj="mux_4" inlet="i2"/>
+         <dest obj="chorus_1" inlet="in"/>
       </net>
       <net>
          <source obj="or_1" outlet="o"/>
@@ -1199,6 +1199,6 @@
       <x>0</x>
       <y>23</y>
       <width>1280</width>
-      <height>729</height>
+      <height>731</height>
    </windowPos>
 </patch-1.0>
